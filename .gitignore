@@ -1,0 +1,7 @@
+#Files
+scratch.py
+*.code-workspace
+
+# Folders
+/files
+/venv

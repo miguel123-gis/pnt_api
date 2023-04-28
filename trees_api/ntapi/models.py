@@ -20,7 +20,7 @@ CONSERVATION_STATUS = [
 # Species class
 class Species(models.Model):
     common_name         = models.CharField(max_length=50)
-    species             = models.CharField(max_length=50)
+    species             = models.CharField(max_length=50, unique=True)
     # family              = models.CharField(max_length=50)
     # common_name_other   = models.CharField(max_length=50)
     # min_altitude        = models.IntegerField(default=0) 

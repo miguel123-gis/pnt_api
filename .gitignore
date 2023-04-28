@@ -5,3 +5,7 @@ scratch.py
 # Folders
 /files
 /venv
+
+# Ignore migrations folder and db
+trees_api/ntapi/migrations
+trees_api/db.sqlite3

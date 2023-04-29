@@ -1,11 +1,16 @@
-#Files
+# Files
 scratch.py
 *.code-workspace
 
-# Folders
-/files
+# Files folder
+# Ignore all except for images and PDF
+/files/*
+!/files/images
+!/files/*.pdf
+
+# Virtual env folder
 /venv
 
 # Ignore migrations folder and db
-trees_api/ntapi/migrations
+trees_api/ntapi/migrations/
 trees_api/db.sqlite3

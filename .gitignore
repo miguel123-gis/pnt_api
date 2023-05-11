@@ -12,5 +12,6 @@ scratch.py
 /venv
 
 # Ignore migrations folder and db
-trees_api/ntapi/migrations/
-trees_api/db.sqlite3
+pnt_proj/ntapi/migrations/*
+!/pnt_proj/ntapi/migrations/.gitkeep
+pnt_proj/db.sqlite3

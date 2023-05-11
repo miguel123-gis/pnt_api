@@ -15,3 +15,7 @@ scratch.py
 pnt_proj/ntapi/migrations/*
 !/pnt_proj/ntapi/migrations/.gitkeep
 pnt_proj/db.sqlite3
+
+# Ignore pycache folder
+pnt_proj/pnt_proj/__pycache__
+pnt_proj/ntapi/__pycache__

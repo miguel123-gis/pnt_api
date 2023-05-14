@@ -1,5 +1,4 @@
 from django.db import models
-import uuid
 
 # Choices for ecological classification
 ECOLOGICAL_CLASSIFICATION = [('IN', 'Indigenous'), ('EN', 'Endemic')]

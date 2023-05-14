@@ -4,7 +4,7 @@ from ntapi.models import Species, ECOLOGICAL_CLASSIFICATION, CONSERVATION_STATUS
 class SpeciesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Species
-        fields = ['common_name', 'species']
+        fields = ['id', 'common_name', 'species']
 
         # Other fields to include soon
         # family              = serializers.CharField()

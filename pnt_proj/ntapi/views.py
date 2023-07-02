@@ -3,7 +3,7 @@ from ntapi.serializers import SpeciesSerializer
 from rest_framework import generics
 
 class SpeciesList(generics.ListCreateAPIView):
-    queryset = Species.objects.all()
+    queryset = Species.objects.all().order_by('id')
     serializer_class = SpeciesSerializer
 
 class SpeciesDetail(generics.RetrieveUpdateDestroyAPIView):

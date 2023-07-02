@@ -3,10 +3,11 @@ scratch.py
 *.code-workspace
 
 # Files folder
-# Ignore all except for images and PDF
+# Ignore all except for images, PDF, 
 /files/*
 !/files/images
 !/files/*.pdf
+!/files/binhi_priority_trees.csv
 
 # Virtual env folder
 /venv

@@ -1,29 +1,14 @@
 from django.db import models
 
-# Choices for ecological classification
-ECOLOGICAL_CLASSIFICATION = [('IN', 'Indigenous'), ('EN', 'Endemic')]
-
-# Choices for conservation status
-CONSERVATION_STATUS = [
-    ('CR', 'Critically Endangered'),
-    ('DD', 'Data Deficient'),
-    ('EN', 'Endangered'),
-    ('LC', 'Least Concern'),
-    ('NE', 'Not Evaluated'),
-    ('NT', 'Near Threatened'),
-    ('OWS', 'Other Wildife Species'),
-    ('OTS', 'Other Threatened Species'),
-    ('VU', 'Vulnerable')
-]
-
 # Species class
 class Species(models.Model):
-    common_name         = models.CharField(max_length=50)
-    species             = models.CharField(max_length=50, unique=True)
-    # family              = models.CharField(max_length=50)
-    # common_name_other   = models.CharField(max_length=50)
+    id                  = models.IntegerField(primary_key=True, blank=False, editable=False)
+    common_name         = models.CharField(max_length=150, null = True)
+    species             = models.CharField(max_length=150, unique=True, null = True)
+    family              = models.CharField(max_length=100, null = True)
+    ecological_classification   = models.CharField(max_length=50, null = True)
+    conservation_status         = models.CharField(max_length=50, null = True)
+    binhi_priority         = models.CharField(max_length=3, null = True)
     # min_altitude        = models.IntegerField(default=0) 
     # max_altitude        = models.IntegerField(default=0)
-    # ecological_classification   = models.CharField(max_length=50, choices=ECOLOGICAL_CLASSIFICATION)
-    # conservation_status         = models.CharField(max_length=50, choices=CONSERVATION_STATUS)
     # alay_page           = models.IntegerField(default=0)

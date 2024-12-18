@@ -12,7 +12,7 @@ lxml==4.9.2
 markdown-it-py==2.2.0
 mdurl==0.1.2
 multidict==6.0.4
-numpy==1.25.0
+numpy==1.26.4
 pandas==2.0.2
 psycopg2==2.9.6
 Pygments==2.15.1

@@ -8,6 +8,7 @@ scratch.py
 !/files/images
 !/files/*.pdf
 !/files/binhi_priority_trees.csv
+!/files/tables.zip
 
 # Virtual env folder
 /venv

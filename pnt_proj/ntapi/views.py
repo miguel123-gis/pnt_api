@@ -4,6 +4,10 @@ from rest_framework import generics
 
 field_mappings = SpeciesSerializer.field_mappings
 
+class SpeciesList(generics.ListAPIView):
+    queryset = Species.objects.all().order_by('id')
+    serializer_class = SpeciesSerializer
+
 class SpeciesDetail(generics.ListAPIView):
     serializer_class = SpeciesSerializer    
 

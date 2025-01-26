@@ -5,7 +5,8 @@ class SpeciesSerializer(serializers.ModelSerializer):
     field_mappings = {
         'name': 'common_name',
         'classification': 'ecological_classification',
-        'status': 'conservation_status'
+        'status': 'conservation_status',
+        'priority': 'binhi_priority'
     }
 
     class Meta:

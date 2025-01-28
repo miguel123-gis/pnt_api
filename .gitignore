@@ -5,6 +5,7 @@ scratch.py
 /pnt_proj/nginx.conf
 /pnt_proj/.env
 __pycache__/
+/pnt_proj/logs/*.log
 
 # Files folder
 # Ignore all except for images, PDF, 

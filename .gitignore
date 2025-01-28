@@ -1,6 +1,8 @@
 # Files
 scratch.py
 *.code-workspace
+/pnt_proj/gunicorn.conf.py
+/pnt_proj/nginx.conf
 /pnt_proj/.env
 __pycache__/
 

@@ -2,6 +2,7 @@
 scratch.py
 *.code-workspace
 /pnt_proj/.env
+__pycache__/
 
 # Files folder
 # Ignore all except for images, PDF, 

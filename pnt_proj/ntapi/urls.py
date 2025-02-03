@@ -3,6 +3,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from ntapi import views
 
 urlpatterns = [
+    path('', views.SpeciesList.as_view()),
     path('ntapi/', views.SpeciesList.as_view()),
     path('ntapi/<str:lu_field>=<str:lu_value>/', views.SpeciesDetail.as_view(), name='species_detail')
 ]

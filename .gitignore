@@ -7,6 +7,7 @@ scratch.py
 __pycache__/
 /pnt_proj/logs/*.log
 !pnt_proj/logs/
+/pnt_proj/pnt_proj/settings.py
 
 # Files folder
 # Ignore all except for images, PDF, 

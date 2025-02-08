@@ -2,6 +2,7 @@ from ntapi.models import Species
 from ntapi.serializers import SpeciesSerializer
 from rest_framework import generics
 
+
 field_mappings = SpeciesSerializer.field_mappings
 
 class SpeciesList(generics.ListAPIView):

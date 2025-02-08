@@ -2,6 +2,7 @@ from ntapi.models import Species
 from ntapi.serializers import SpeciesSerializer
 from rest_framework import generics
 
+from rest_framework.response import Response
 
 field_mappings = SpeciesSerializer.field_mappings
 
@@ -27,3 +28,13 @@ class SpeciesDetail(generics.ListAPIView):
                 queryset = queryset.filter(**filter_kwargs)
 
         return queryset
+    
+    # Since ListAPIView returns a list, return a modified list instead
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
+
+        return Response({
+            "results": len(serializer.data),
+            "data": serializer.data
+        })

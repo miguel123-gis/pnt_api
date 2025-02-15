@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ast.literal_eval(os.environ.get("ALLOWED_HOSTS"))
 # Application definition
 
 INSTALLED_APPS = [
+    'home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

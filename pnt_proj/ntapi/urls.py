@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from rest_framework.urlpatterns import format_suffix_patterns
 from ntapi import views
 
@@ -10,7 +10,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('ntapi/', views.SpeciesList.as_view()),
-    path('ntapi/<str:lu_field>=<str:lu_value>/', views.SpeciesDetail.as_view(), name='species_detail')
+    re_path(r"^ntapi/(?P<filters>(\w+:[\w\s]+/?)*)$", views.SpeciesDetail.as_view(), name="species_detail")
 ]
 
+# TODO Use custom path converters
+# Return the filter as dict and process accordingly in views
 urlpatterns = format_suffix_patterns(urlpatterns)

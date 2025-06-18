@@ -12,10 +12,9 @@ __pycache__/
 # Files folder
 # Ignore all except for images, PDF, 
 /files/*
-!/files/images
-!/files/*.pdf
-!/files/binhi_priority_trees.csv
-!/files/tables.zip
+!/files/sources/National List of Threatened Flora - DENR DAO 2017-11.xlsx
+!/files/sources/Philippine Native Trees – What to Plant in Different Provinces
+!/files/sources/binhi_priority_species.csv
 
 # Virtual env folder
 /venv

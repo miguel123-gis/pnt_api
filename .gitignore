@@ -1,13 +1,13 @@
 # Files
 scratch.py
 *.code-workspace
-/pnt_proj/gunicorn.conf.py
-/pnt_proj/nginx.conf
-/pnt_proj/.env
+/gunicorn.conf.py
+/nginx.conf
+/.env
 __pycache__/
-/pnt_proj/logs/*.log
-!pnt_proj/logs/
-/pnt_proj/pnt_proj/settings.py
+/logs/*.log
+!/logs/
+/pnt_proj/settings.py
 
 # Files folder
 # Ignore all except for images, PDF, 
@@ -21,9 +21,9 @@ __pycache__/
 /venv
 
 # Ignore migrations folder and db
-pnt_proj/ntapi/migrations/*
+ntapi/migrations/*
 !/pnt_proj/ntapi/migrations/.gitkeep
-pnt_proj/db.sqlite3
+db.sqlite3
 
 # Ignore pycache folder
 pnt_proj/pnt_proj/__pycache__
